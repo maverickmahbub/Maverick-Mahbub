@@ -111,7 +111,7 @@ export default function Contact() {
     {
       icon: Phone,
       label: "Phone",
-      value: "+880 14920147010",
+      value: "+880 1920147010",
       description: "Let's talk about your project",
       color: "neon-magenta"
     },
@@ -135,26 +135,26 @@ export default function Contact() {
     {
       icon: Youtube,
       label: "YouTube",
-      handle: "@MaverickMahbub",
+      handle: "",
       followers: "500K+",
       color: "bg-red-500",
-      url: "https://youtube.com/@maverickmahbub"
+      url: ""
     },
     {
       icon: Twitter,
       label: "Twitter",
-      handle: "@MaverickMahbub",
+      handle: "",
       followers: "125K+",
       color: "bg-blue-500",
-      url: "https://twitter.com/maverickmahbub"
+      url: ""
     },
     {
       icon: Instagram,
       label: "Instagram",
-      handle: "@maverick.mahbub",
+      handle: "",
       followers: "200K+",
       color: "bg-gradient-to-r from-purple-500 to-pink-500",
-      url: "https://instagram.com/maverick.mahbub"
+      url: ""
     },
     {
       icon: Linkedin,
@@ -162,7 +162,7 @@ export default function Contact() {
       handle: "Maverick Mahbub",
       followers: "50K+",
       color: "bg-blue-600",
-      url: "https://linkedin.com/in/maverickmahbub"
+      url: ""
     }
   ];
 
