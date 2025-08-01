@@ -104,21 +104,21 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@maverickmahbub.com",
+      value: "maverickmahbub.official@gmail.com",
       description: "Drop me a line anytime",
       color: "neon-blue"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+880 14920147010",
       description: "Let's talk about your project",
       color: "neon-magenta"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Digital Realm",
+      value: "Mirpur, Dhaka, Bangladesh",
       description: "Working globally, thinking locally",
       color: "neon-blue"
     },
