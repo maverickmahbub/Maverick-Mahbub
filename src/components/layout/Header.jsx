@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '../../assets/logo.png';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,7 +21,6 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    // Set dark theme by default
     document.documentElement.classList.add('dark');
   }, []);
 
@@ -50,21 +50,23 @@ export default function Header() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          {/* ✅ Updated Logo Section */}
+          <Link to="/" className="flex items-center space-x-3">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="relative"
             >
-              <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="text-white font-bold text-xl">M</span>
-              </div>
-              <div className="absolute inset-0 rounded-lg gradient-primary opacity-50 blur-md animate-glow"></div>
+              <img
+                src={logo}
+                alt="Maverick Mahbub Logo"
+                className="h-14 w-14 sm:h-16 sm:w-16 rounded-xl object-cover z-10"
+              />
+              <div className="absolute inset-0 rounded-xl gradient-primary opacity-30 blur-lg animate-glow"></div>
             </motion.div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold gradient-text">Maverick</h1>
-              <p className="text-xs text-muted-foreground -mt-1">Digital Architect</p>
+              <h1 className="text-2xl font-extrabold gradient-text">Maverick</h1>
+              <p className="text-sm text-muted-foreground -mt-1">Digital Architect</p>
             </div>
           </Link>
 
@@ -95,7 +97,6 @@ export default function Header() {
 
           {/* Right Section */}
           <div className="flex items-center space-x-4">
-            {/* Theme Toggle */}
             <Button
               variant="ghost"
               size="sm"
@@ -127,7 +128,6 @@ export default function Header() {
               </AnimatePresence>
             </Button>
 
-            {/* CTA Button */}
             <Button
               asChild
               className="hidden sm:flex gradient-primary text-white border-0 neon-glow-blue hover:scale-105 transition-transform duration-200"
@@ -135,7 +135,6 @@ export default function Header() {
               <Link to="/contact">Hire Me</Link>
             </Button>
 
-            {/* Mobile Menu Toggle */}
             <Button
               variant="ghost"
               size="sm"
@@ -222,4 +221,3 @@ export default function Header() {
     </motion.header>
   );
 }
-
